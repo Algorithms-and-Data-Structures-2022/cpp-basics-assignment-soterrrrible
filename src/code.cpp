@@ -49,10 +49,15 @@ namespace assignment {
 
   // Task 5
   int arr_sum(int *arr, int length) {
-
-    // Write your code here ...
-
-    return 0;
+    
+    int result = 0;
+    if (arr = nullptr || length < 1) {
+      return 0;
+    }
+    for (int i = 0; i < length; i++) {
+      result = result + arr[i];
+    }
+    return result;
   }
 
   // Task 6

@@ -87,10 +87,10 @@ namespace assignment {
     if (length < 1) {
       return nullptr;
     }
-    int arr[length];
-    std::fill(std::arr.begin(), std::arr.end(), init_value);
+    std::array<int,length> arr;
+    arr.fill(init_value);
     
-    return &arr[0];
+    return &arr;
   }
 
   // Task 8

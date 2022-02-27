@@ -90,7 +90,7 @@ namespace assignment {
     int arr[length];
     std::fill(arr.begin(), arr.end(), init_value);
     
-    return &arr;
+    return &arr[0];
   }
 
   // Task 8

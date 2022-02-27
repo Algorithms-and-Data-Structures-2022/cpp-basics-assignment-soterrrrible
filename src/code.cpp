@@ -62,10 +62,22 @@ namespace assignment {
 
   // Task 6
   int *find_max_elem(int *arr, int length) {
-
-    // Write your code here ...
-
-    return nullptr;
+    
+    int max;
+    bool flag = false;
+    if (arr == nullptr || length < 1) {
+      return nullptr;
+    }
+    for (int i = 0; i < length; i++) {
+      if (flag == false) {
+        max = arr[0];
+      } else {
+        if (max < arr[i]) {
+          max = arr[i];
+        }
+      }
+    }
+    return max;
   }
 
   // Task 7

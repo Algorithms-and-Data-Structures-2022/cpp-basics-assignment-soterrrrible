@@ -9,7 +9,7 @@ namespace assignment {
   int squared_diff(int left, int right) {
 
     int result = left - right;
-    cout << result * result;
+    std::cout << result * result;
     
     return 0;
   }

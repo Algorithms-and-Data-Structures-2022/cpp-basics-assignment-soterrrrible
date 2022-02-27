@@ -88,7 +88,7 @@ namespace assignment {
       return nullptr;
     }
     int arr[length];
-    std::fill(arr.begin(), v.end(), init_value);
+    std::fill(arr.begin(), arr.end(), init_value);
     
     return &arr;
   }

@@ -8,8 +8,9 @@ namespace assignment {
   // Task 1
   int squared_diff(int left, int right) {
 
-    // Write your code here ...
-
+    int result = left - right;
+    cout << result * result;
+    
     return 0;
   }
 

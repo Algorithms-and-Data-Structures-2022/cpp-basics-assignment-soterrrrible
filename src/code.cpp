@@ -51,7 +51,7 @@ namespace assignment {
   int arr_sum(int *arr, int length) {
     
     int result = 0;
-    if (arr = nullptr || length < 1) {
+    if (arr == nullptr || length < 1) {
       return 0;
     }
     for (int i = 0; i < length; i++) {

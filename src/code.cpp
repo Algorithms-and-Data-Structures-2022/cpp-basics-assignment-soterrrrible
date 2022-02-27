@@ -91,7 +91,7 @@ namespace assignment {
     for (int i = 0; i < length; i++) {
       arr[i] = init_value;
     }
-    return &arr[0];
+    return arr;
   }
 
   // Task 8

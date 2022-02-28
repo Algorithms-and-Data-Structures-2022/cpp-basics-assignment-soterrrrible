@@ -111,7 +111,18 @@ namespace assignment {
   // Task 9
   void print_kth_elements(int *arr, int length, int k, std::ostream &os) {
 
-    // Write your code here ...
+    if (arr == nullptr) {
+      os << "Invalid argument: arr\n";
+    }
+    if (length < 1) {
+      os << "Invalid argument: length\n";
+    }
+    if (k < 1) {
+      os << "Invalid argument: k\n";
+    }
+    for (int i = 0; i < length; i + k;) {
+      os << arr[i] << "\t";
+    }
   }
 
 }  // namespace assignment

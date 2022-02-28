@@ -97,9 +97,15 @@ namespace assignment {
   // Task 8
   int *clone_arr(int *arr_in, int length) {
 
-    // Write your code here ...
-
-    return nullptr;
+     if (length < 1) {
+      return nullptr;
+    }
+    int* new_arr = new int[length];
+    for (int i = 0; i < length; i++) {
+      new_arr[i] = arr_in[i];
+    }
+    
+    return new_arr;
   }
 
   // Task 9

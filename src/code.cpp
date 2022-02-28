@@ -36,7 +36,13 @@ namespace assignment {
   // Task 3
   int max3(int left, int middle, int right) {
 
-    // Write your code here ...
+    if (left >= middle && left >= right) {
+      return left;
+    } else if (middle >= left && middle >= right) {
+      return middle;
+    } else {
+      return right;
+    }
 
     return 0;
   }

@@ -120,7 +120,7 @@ namespace assignment {
     if (k < 1) {
       os << "Invalid argument: k\n";
     }
-    for (int i = 0; i < length; i + k;) {
+    for (int i = 0; i < length; i = i + k) {
       os << arr[i] << "\t";
     }
   }

@@ -50,7 +50,13 @@ namespace assignment {
   // Task 4
   void swap_args(int *left, int *right) {
 
-    // Write your code here ...
+    if (left == nullptr || right = nullptr) {
+      return;
+    } else {
+      int middle = *left;
+      *left = *right;
+      *right = middle;
+    }
   }
 
   // Task 5

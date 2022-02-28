@@ -87,7 +87,7 @@ namespace assignment {
     if (length < 1) {
       return nullptr;
     }
-    int arr[length];
+    int arr = new int[length];
     for (int i = 0; i < length; i++) {
       arr[i] = init_value;
     }

@@ -113,15 +113,14 @@ namespace assignment {
 
     if (arr == nullptr) {
       os << "Invalid argument: arr\n";
-    }
-    if (length < 1) {
+    } else if (length < 1) {
       os << "Invalid argument: length\n";
-    }
-    if (k < 1) {
+    } else if (k < 1) {
       os << "Invalid argument: k\n";
-    }
-    for (int i = 0; i < length; i = i + k) {
-      os << arr[i] << "\t";
+    } else {
+      for (int i = 0; i < length; i = i + k) {
+        os << arr[i] << "\t";
+       }
     }
   }
 
